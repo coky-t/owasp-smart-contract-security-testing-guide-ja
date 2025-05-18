@@ -24,9 +24,9 @@ function withdraw(uint256 amount) public {
 
 ### **影響**
 
-- Contracts may become vulnerable to exploitation, resulting in the theft or loss of funds, data corruption, or denial of service.  
-- Security flaws in design can lead to cascading failures in interconnected systems or dApps.  
-- Exploits often undermine user trust and the reputation of the project.  
+- コントラクトが悪用されやすくなり、資金の窃取や損失、データ破損、サービス拒否につながる可能性があります。
+- 設計上のセキュリティ欠陥は相互接続されたシステムや分散型アプリケーションに連鎖的な障害を引き起こす可能性があります。
+- 悪用されるとユーザーの信頼とプロジェクトの評判を損なうことがよくあります。
 
 ### **対策**
 
