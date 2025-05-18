@@ -30,11 +30,11 @@ function withdraw(uint256 amount) public {
 
 ### **対策**
 
-- Conduct a comprehensive threat model analysis during the design phase to identify potential risks and attack vectors.  
-- Follow secure coding and design principles, such as least privilege, separation of duties, and fail-safe defaults.  
-- Regularly perform security audits, both during development and prior to deployment.  
-- Use formal verification tools to validate critical properties of your smart contracts.  
-- Employ defense-in-depth strategies, including mechanisms like reentrancy guards, circuit breakers, and secure external call handling.  
+- 設計フェーズで包括的な脅威モデル分析を実施し、潜在的なリスクと攻撃ベクトルを特定します。
+- セキュアコーディングと、最小権限、職務分離、フェイルセーフデフォルトなどの設計の原則に従います。
+- 開発時およびデプロイメント前の両方で、定期的にセキュリティ監査を実施します。
+- 形式検証ツールを使用して、スマートコントラクトの重要なプロパティを検証します。
+- 再入保護、サーキットブレーカー、安全な外部コール処理などのメカニズムを含む多層防御戦略を採用します。
 
 
 ## モジュール性とアップグレード可能性のテスト (Testing Modularity and Upgradability)
