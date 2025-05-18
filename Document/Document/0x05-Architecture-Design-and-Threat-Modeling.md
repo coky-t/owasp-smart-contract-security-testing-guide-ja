@@ -2,15 +2,15 @@
 
 ### **説明**
 
-Flawed architecture, design, and inadequate threat modeling in smart contracts can lead to vulnerabilities that compromise the security, functionality, or usability of a decentralized application (dApp). These issues often arise due to a lack of consideration for potential attack vectors, edge cases, and dependencies during the design phase.
+スマートコントラクトにおける欠陥のあるアーキテクチャ、設計、不適切な脅威モデリングは、分散型アプリケーション (dApp) のセキュリティ、機能性、ユーザビリティを損なう脆弱性につながる可能性があります。これらの問題は設計フェーズで潜在的な攻撃ベクトル、エッジケース、依存関係の考慮不足が原因で発生することがよくあります。
 
-Poor design and threat modeling can result in issues such as:
+設計や脅威モデリングが不十分だと、以下のような問題を引き起こす可能性があります。
 
-- Insecure storage of sensitive data
-- Flawed or unoptimized logic for critical functions
-- Lack of mitigation strategies for common attack vectors, such as reentrancy or flash loan attacks
-- Insufficient mechanisms for governance or upgrades
-- Overlooked dependencies on external systems or oracles
+- 機密データの安全でない保管
+- 重要な機能の欠陥があるロジックや最適化されていないロジック
+- 再入攻撃やフラッシュローン攻撃などの、一般的な攻撃ベクトルに対する緩和策の欠如
+- ガバナンスやアップグレードのための不十分なメカニズム
+- 外部システムやオラクルへの依存関係の見落とし
 
 ### **例: 設計が不十分な関数ロジック**
 
