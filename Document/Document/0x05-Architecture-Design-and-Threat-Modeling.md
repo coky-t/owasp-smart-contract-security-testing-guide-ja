@@ -41,7 +41,7 @@ function withdraw(uint256 amount) public {
 
 
 ### **説明**
-Modularity and upgradability are essential principles for the long-term security and maintainability of smart contracts. Poor modularity often leads to monolithic designs that combine critical logic and storage, making it difficult to upgrade, audit, or scale the system. Without controlled upgrade mechanisms, an attacker could exploit weaknesses in the upgrade process, leading to unauthorized contract changes or the introduction of security flaws. Ensuring a well-structured contract with clear modular separation, as well as a secure upgrade process, is crucial to avoiding such vulnerabilities.
+モジュール性とアップグレード可能性は、スマートコントラクトの長期的なセキュリティと保守性にとって不可欠な原則です。モジュール性が不十分だと、重要なロジックとストレージが一体化したモノリシックな設計になりがちで、システムのアップグレード、監査、拡張が困難になります。制御されたアップグレードメカニズムがなければ、攻撃者はアップグレードプロセスの弱点を悪用し、不正なコントラクトの変更やセキュリティ欠陥の導入につながる可能性があります。このような脆弱性を回避するには、モジュールが明確に分離され、適切に構造化されたコントラクトと、安全なアップグレードプロセスを確保することが不可欠です。
 
 ---
 
