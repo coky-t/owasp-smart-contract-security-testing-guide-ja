@@ -66,9 +66,9 @@ contract Monolithic {
 ```
 
 #### **なぜ脆弱なのか**
-- The monolithic design combines logic and state in a single contract, making upgrades risky.
-- Changes to storage or logic could inadvertently corrupt existing data.
-- The lack of separation makes it more difficult to isolate bugs or vulnerabilities in logic.
+- モノリシック設計ではロジックと状態を単一のコントラクトに一体化するため、アップグレートにリスクが伴います。
+- ストレージやロジックを変更すると、既存のデータを不注意で破損する可能性があります。
+- 分離の欠如のため、ロジック内のバグや脆弱性の切り分けが困難になります。
 
 #### 修正されたコード:
 
