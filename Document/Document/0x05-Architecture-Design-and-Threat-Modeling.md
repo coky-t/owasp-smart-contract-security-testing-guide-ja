@@ -136,5 +136,5 @@ contract SecureProxy {
 ```
 
 #### **チェック方法**
-- Code Review: Ensure that upgrade functions are protected by access control mechanisms (e.g., only the admin can upgrade).
-- Dynamic Testing: Attempt to perform an unauthorized upgrade to verify that the access control works as intended.
+- コードレビュー: アップグレード関数がアクセス制御メカニズムで保護されていることを確認します (例: 管理者のみがアップグレードできます)。
+- 動的テスト: 不正なアップグレードの実行を試行し、アクセス制御が意図したとおりに機能することを検証します。
