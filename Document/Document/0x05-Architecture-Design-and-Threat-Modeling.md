@@ -115,7 +115,7 @@ contract Proxy {
 ```
 
 #### **なぜ脆弱なのか**
-- The upgrade function is not protected with any access control, allowing any user to replace the implementation contract. This opens the door for malicious actors to hijack the contract functionality.
+- アップグレード関数はアクセス制御で保護されていないため、どんなユーザーでも実装コントラクトを置き換えることができます。これは悪意のある行為者がコントラクト機能を乗っ取る可能性を高めます。
 
 #### 修正されたコード:
 ```solidity
