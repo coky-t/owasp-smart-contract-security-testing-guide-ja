@@ -97,8 +97,8 @@ contract Storage {
 }
 ```
 #### **チェック方法**
-- Code Review: Verify the separation of logic and storage into separate contracts.
-- Storage Analysis: Ensure that the storage layout remains intact when upgrading the contract logic, and that no data corruption occurs.
+- コードレビュー: ロジックとストレージが別々のコントラクトに分離していることを検証します。
+- ストレージ解析: コントラクトロジックをアップグレードしてもストレージレイアウトが維持されること、およびデータ破損が発生しないことを確認します。
 
 ### **テスト 2: 安全で制御されたアップデートメカニズムを検証する**
 
