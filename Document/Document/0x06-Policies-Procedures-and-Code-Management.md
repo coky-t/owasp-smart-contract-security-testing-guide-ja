@@ -3,9 +3,9 @@
 
 ### **説明**
 
-Policies, procedures, and code management play a crucial role in ensuring the security, maintainability, and scalability of smart contracts. Proper development practices, such as secure coding standards, thorough code reviews, and consistent documentation, are essential for preventing vulnerabilities and ensuring smooth development workflows. Without these practices, smart contracts may become difficult to manage, error-prone, or vulnerable to security exploits.
+ポリシー、手順、コード管理は、スマートコントラクトのセキュリティ、保守性、スケーラビリティを確保する上で極めて重要な役割を果たします。セキュアコーディングスタンダード、徹底したコードレビュー、一貫性のある文書化といった適切な開発プラクティスは、脆弱性を防ぎ、円滑な開発ワークフローを確保するために不可欠です。これらのプラクティスがなければ、スマートコントラクトは管理が困難になったり、エラーが発生しやすくなったり、セキュリティ上の悪用に脆弱になるかもしれません。
 
-This section covers best practices in secure coding standards, code review processes, code clarity, and comprehensive testing to reduce vulnerabilities and improve the quality of the codebase.
+このセクションでは、脆弱性を軽減し、コードベースの品質を向上するための、セキュアコーディングスタンダード、コードレビュープロセス、コードの明確化、包括的テストに関するベストプラクティスを説明します。
 
 ### **例: 冗長なコードやデッドコード**
 
