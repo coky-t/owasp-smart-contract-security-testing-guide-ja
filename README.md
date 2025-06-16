@@ -2,12 +2,14 @@
 
 This is the unofficial Japanese translation of the [OWASP Smart Contract Security Testing Guide](https://github.com/OWASP/www-project-smart-contract-security-testing-guide).
 
+- Document Repository - <https://github.com/coky-t/owasp-smart-contract-security-testing-guide-ja>
+
 ### Originator
 
 - SCS Official Site - <https://scs.owasp.org/>
-- SCS Document Site - <https://scs.owasp.org/SCSTG/>
 - Project Site - <https://owasp.org/www-project-smart-contract-security-testing-guide/>
 - Project Repository - <https://github.com/OWASP/www-project-smart-contract-security-testing-guide>
+- Document Site - <https://scs.owasp.org/SCSTG/>
 
 ## OWASP スマートコントラクトセキュリティテストガイド 日本語版
 
@@ -30,3 +32,6 @@ This is the unofficial Japanese translation of the [OWASP Smart Contract Securit
 ## Translator (Japanese)
 
 [Koki Takeyama](https://github.com/coky-t)
+
+- Document Site - <https://coky-t.gitbook.io/owasp-docs-ja/>
+- Document Repository - <https://github.com/coky-t/owasp-docs-ja>
