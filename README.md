@@ -2,6 +2,8 @@
 
 This is the unofficial Japanese translation of the [OWASP Smart Contract Security Testing Guide](https://github.com/OWASP/www-project-smart-contract-security-testing-guide).
 
+**Work In Progress**
+
 - Document Repository - <https://github.com/coky-t/owasp-smart-contract-security-testing-guide-ja>
 
 ### Originator
