@@ -24,7 +24,7 @@ function transfer(address recipient, uint256 amount) public {
 }
 ```
 
-In the above example, the check for `amount == 0` is redundant because the first `require` statement ensures that the sender has enough balance to make the transfer. Also, if `amount == 0`, the transaction would revert due to the `require` check, making the second check unnecessary. Additionally, the `revert("Cannot transfer zero amount")` will never be executed because of the earlier revert.
+上記の例では、最初の `require` ステートメントで送金者が送金に必要な残高を有することを確認しているため、`amount == 0` のチェックは不要です。また、`amount == 0` の場合、`require` チェックによってトランザクションが元に戻る (revert) ため、二つ目のチェックは不要になります。さらに、前の revert のため、`revert("Cannot transfer zero amount")` が実行されることはありません。
 
 ### **影響**
 
