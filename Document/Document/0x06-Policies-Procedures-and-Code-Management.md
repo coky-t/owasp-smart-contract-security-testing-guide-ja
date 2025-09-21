@@ -82,8 +82,8 @@ contract Example {
 }
 ```
 #### **チェック方法**
-- Code Review: Ensure that the pragma directive specifies an up-to-date version of Solidity (e.g., ^0.8.x) and not outdated ones such as ^0.4.x.
-- Automated Check: Use Solidity linting tools or automated CI/CD pipelines to flag usage of outdated compiler versions.
+- コードレビュー: pragma ディレクティブで最新バージョンの Solidity (例: ^0.8.x) を指定しており、^0.4.x などの古いものではないことを確認します。
+- 自動チェック: Solidity リンティングツールまたは自動 CI/CD パイプラインを使用して、古いコンパイラバージョンの使用をフラグ付けします。
 
 ---
 
