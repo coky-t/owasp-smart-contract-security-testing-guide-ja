@@ -28,10 +28,10 @@ function transfer(address recipient, uint256 amount) public {
 
 ### **影響**
 
-- **Code Redundancy**: Redundant checks or logic lead to unnecessary computations and increased gas costs. This can also introduce confusion about the intended behavior of the contract, making it harder to maintain and audit.
-- **Dead Code**: Unreachable or unnecessary code bloats the contract, making it more complex and increasing the risk of errors or vulnerabilities. It can also lead to wasted gas when the contract executes, as unused code still contributes to the overall execution cost.
-- **Security Risks**: Redundant or dead code may hide actual vulnerabilities and complicate the auditing process, making it easier for attackers to find and exploit flaws.
-- **Maintainability Issues**: The presence of redundant or dead code makes the contract harder to maintain and extend, as developers may waste time debugging or managing parts of the code that do not affect the system's functionality.
+- **コードの冗長性**: 冗長なチェックやロジックは不要な計算とガスコストの増加につながります。また、コントラクトの意図した動作に関する混乱を招き、保守や監査を困難にする可能性があります。
+- **デッドコード**: 到達不能なコードや不要なコードはコントラクトを肥大化し、より複雑化し、エラーや脆弱性のリスクを高めます。また、未使用のコードも全体の実行コストに寄与するため、コントラクト実行時にガスの無駄につながる可能性もあります。
+- **セキュリティリスク**: 冗長コードやデッドコードは実際の脆弱性を隠し、監査プロセスを複雑にし、攻撃者が欠陥を見つけて悪用しやすくなる可能性があります。
+- **保守性の問題**: 冗長コードやデッドコードが存在すると、開発者がシステムの機能に影響しないコード部分のデバッグや管理に時間を浪費する可能性があるため、コントラクトの保守や拡張を困難にします。
 
 ### **対策**
 
