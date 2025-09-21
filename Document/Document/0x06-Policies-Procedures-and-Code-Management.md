@@ -45,7 +45,7 @@ function transfer(address recipient, uint256 amount) public {
 
 
 ### **説明**
-Proper management of development policies, secure coding standards, code clarity, and test coverage ensures that smart contracts are secure, maintainable, and resilient to vulnerabilities. This test focuses on ensuring adherence to best practices and guidelines for developing and reviewing smart contracts. This includes the use of current compilers, avoiding deprecated functions, thorough code reviews, and ensuring proper test coverage. Code clarity is also critical for maintaining contracts over time and ensuring they remain understandable and auditable.
+開発ポリシー、セキュアコーディングスタンダード、コードの明確さ、テストカバレッジを適切に管理することで、スマートコントラクトの安全性、保守性、脆弱性に対する耐性を確保します。このテストはスマートコントラクトの開発とレビューに関するベストプラクティスとガイドラインの遵守を確保することに重点を置いています。これには、最新のコンパイラの使用、非推奨関数の回避、徹底したコードレビュー、適切なテストカバレッジを含みます。コードの明確さは、コントラクトを長期にわたって維持し、理解しやすく監査可能な状態を維持するためにも重要です。
 
 ---
 
