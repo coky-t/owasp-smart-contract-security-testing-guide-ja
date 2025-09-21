@@ -35,10 +35,10 @@ function transfer(address recipient, uint256 amount) public {
 
 ### **対策**
 
-- **Remove Redundant and Dead Code**: Perform regular code reviews and refactor contracts to eliminate redundant or dead code. This reduces complexity and ensures that the contract remains efficient and understandable.
-- **Keep Logic Simple and Clear**: Avoid unnecessary checks or repeated logic that can be handled by existing conditions or functions. Keep the contract logic as simple and clear as possible to minimize the chance of introducing errors.
-- **Optimize Gas Costs**: Removing unnecessary logic reduces gas consumption, making the contract more cost-effective for users and improving overall network performance.
-- **Use Automated Tools**: Implement static analysis tools and linters to detect redundant or dead code, helping to streamline the codebase and enforce best practices.
+- **冗長コードとデッドコードを削除する**: 定期的なコードレビューとコントラクトのリファクタを実施し、冗長コードやデッドコードを取り除きます。これは複雑さを軽減し、コントラクトの効率性と分かりやすさを維持することを確保します。
+- **ロジックをシンプルかつクリアに保つ**: 既存の条件や関数で処理できる不要なチェックやロジックの重複を避けます。エラー発生の可能性を最小限に抑えることを可能にするため、コントラクトロジックをシンプルかつクリアに保ちます。
+- **ガスコストを最適化する**: 不要なロジックを削除するとガスの消費量を削減し、ユーザーに対してコントラクトの費用対効果を高め、ネットワーク全体のパフォーマンスを向上します。
+- **自動ツールを使用する**: 静的解析ツールとリンターを実装して冗長コードやデッドコードを検出し、コードベースを合理化し、ベストプラクティスを適用します。
 
 
 ## コンパイラバージョンと非推奨関数のテスト (Test for Compiler Version and Deprecated Functions)
