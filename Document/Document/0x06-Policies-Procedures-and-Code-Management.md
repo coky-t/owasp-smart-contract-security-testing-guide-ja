@@ -65,8 +65,8 @@ contract Example {
 }
 ```
 #### **なぜ脆弱なのか**
-- The contract uses an outdated compiler version (^0.4.0). Using old versions of Solidity may lead to known security vulnerabilities and lack of support for modern features.
-- Older compiler versions also lack optimizations and security fixes that are available in newer versions.
+- コントラクトは古いコンパイラバージョン (^0.4.0) を使用しています。古いバージョンの Solidity を使用すると、既知のセキュリティ脆弱性や最新機能のサポートの欠如につながる可能性があります。
+- また、古いコンパイラは新しいバージョンで利用できる最適化やセキュリティ修正も欠いています。
 
 #### 修正されたコード:
 
