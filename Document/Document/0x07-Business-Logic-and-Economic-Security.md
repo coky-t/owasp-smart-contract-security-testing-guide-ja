@@ -1,8 +1,8 @@
-# ビジネスロジックと経済のセキュリティのテスト (Testing Business Logic and Economic Security)
+# ビジネスロジックと経済的セキュリティのテスト (Testing Business Logic and Economic Security)
 
 ### **説明**
 
-Business logic and economic security in smart contracts ensure that the contract's operational rules and the associated economic incentives are properly designed to avoid exploitation and inefficiencies. This includes defining incentive structures, ensuring the stability of token values, preventing reentrancy attacks, and making sure that the tokenomics aligns with the expected behavior of the system. Contracts must be designed to avoid logical flaws, ensure that token rewards and penalties are correctly implemented, and prevent attacks that could undermine the contract's economic model.
+スマートコントラクトのビジネスロジックと経済的セキュリティは、コントラクトの運用ルールと関連する経済的インセンティブが適切に設計され、悪用や非効率性を避けていることを確保します。これは、インセンティブ構造の定義、トークン価値の安定性の確保、再入攻撃の防止、トークノミクスがシステムの期待される動作と整合していることの確認を含みます。コントラクトは、論理的な欠陥を回避し、トークンの報酬とペナルティが正しく実装されるように確保し、コントラクトの経済モデルを損なう可能性のある攻撃を防ぐように設計される必要があります。
 
 ### **例: 不適切なインセンティブ構造**
 
