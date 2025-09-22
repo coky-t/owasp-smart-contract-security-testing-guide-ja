@@ -15,7 +15,7 @@ function withdraw(uint256 amount) public {
 }
 ```
 
-In the example above, a push-based withdrawal system may allow for unexpected behaviors, such as reentrancy attacks or failure to properly track balances due to uncontrolled fund transfers. A better approach would be to use a pull-based system.
+上記の例では、プッシュベースの引き落としシステムが、再入攻撃や、制御されていない資金移動による残高の適切な追跡の失敗など、予期しない動作を許す可能性があります。より良いアプローチはプルベースのシステムを使用することです。
 
 ### **影響**
 
