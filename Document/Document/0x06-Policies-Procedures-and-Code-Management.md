@@ -144,6 +144,6 @@ contract Token {
 - この変更は、コントラクトが新しい Solidity バージョン (>=0.5.x) と互換があることを確保し、将来のアップグレードでの潜在的な問題を回避します。
 
 #### **チェック方法**
-- Code Review: Ensure the contract is not using any deprecated or obsolete functions. Look for any `transfer()`, `send()`, or other outdated methods, and replace them with the more secure `call()` method when sending Ether.
-- Static Analysis Tools: Use tools like SolidityScan, MythX, Slither, or linters to detect deprecated features and provide suggestions for updating the code.
-- Testing: Test the contract using the latest Solidity version and verify that no deprecated functions are used, ensuring compatibility with newer compilers.
+- コードレビュー: コントラクトが非推奨の関数や廃止された関数を使用していないことを確認します。Ether 送信時の、`transfer()`、`send()` 、その他の古いメソッドを探し、より安全な `call()` メソッドで置き換えます。
+- 静的解析ツール: SolidityScan, MythX, Slither, リンターなどのツールを使用して、非推奨の機能を検出し、コードを更新するための提案を提供します。
+- テスト: 最新の Solidity バージョンを使用してコントラクトをテストし、非推奨の関数が使用されていないことを検証して、新しいコンパイラとの互換性を確保します。
