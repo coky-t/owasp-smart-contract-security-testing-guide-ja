@@ -6,7 +6,7 @@
 
 - [アーキテクチャ、設計、脅威モデリングのテスト (Testing Architecture, Design, and Threat Modeling)](Document/Document/0x05-Architecture-Design-and-Threat-Modeling.md)
 - [ポリシー、手続き、コード管理のテスト (Testing Policies, Procedures, and Code Management)](Document/Document/0x06-Policies-Procedures-and-Code-Management.md)
-- [ビジネスロジックと経済のセキュリティのテスト (Testing Business Logic and Economic Security)](Document/Document/0x07-Business-Logic-and-Economic-Security.md)
+- [ビジネスロジックと経済的セキュリティのテスト (Testing Business Logic and Economic Security)](Document/Document/0x07-Business-Logic-and-Economic-Security.md)
 - [アクセス制御と認証のテスト (Testing Access Control and Authentication Vulnerabilties)](Document/Document/0x08-Access-Control-and-Authentication.md)
 - [スマートコントラクトのチェックされていない外部呼び出しのテスト (Testing Unchecked External Calls in Smart Contracts)](Document/Document/0x09-Secure-Interactions-and-Communications.md)
 - [暗号化の実践のテスト (Testing Cryptographic Practices)](Document/Document/0x10-Cryptographic-Practices.md)
