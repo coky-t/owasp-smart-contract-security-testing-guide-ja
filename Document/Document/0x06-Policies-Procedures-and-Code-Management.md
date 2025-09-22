@@ -7,7 +7,7 @@
 
 このセクションでは、脆弱性を軽減し、コードベースの品質を向上するための、セキュアコーディングスタンダード、コードレビュープロセス、コードの明確化、包括的テストに関するベストプラクティスを説明します。
 
-### **例: 冗長なコードやデッドコード**
+### **例: 冗長コードやデッドコード**
 
 ```solidity
 // Example: Code with redundant, duplicated, or dead code
@@ -112,9 +112,9 @@ contract Token {
 ```
 
 #### **なぜ脆弱なのか**
-- The function transfer in the above example uses a deprecated `transfer()` method to send Ether to the recipient.
-- The `transfer()` method was removed in Solidity 0.5.x, and it’s recommended to use `call()` instead to prevent errors due to changes in gas limits and transfer behavior in newer Solidity versions.
-- Using deprecated functions can make your contract incompatible with future versions of Solidity and leave it vulnerable to unexpected behavior.
+- 上記の例の関数 transfer は非推奨の `transfer()` メソッドを使用して、受信者に Ether を送信します。
+- `transfer()` メソッドは Solidity 0.5.x で削除されました。新しい Solidity バージョンでのガス制限と転送動作の変更によるエラーを防ぐため、代わりに `call()` を使用することをお勧めします。
+- 非推奨関数を使用すると、コントラクトは Solidity の将来のバージョンと互換性がなくなり、予期しない動作に脆弱なままとなる可能性があります。
 
 #### 修正されたコード:
 
