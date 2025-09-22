@@ -139,9 +139,9 @@ contract Token {
 ```
 
 #### **なぜ修正が機能するのか**
-- The updated code uses the `call()` method instead of the deprecated `transfer()` method to send Ether.
-- The `call()` method is more flexible and is recommended in Solidity 0.5.x and later, as it allows specifying gas and properly handling errors.
-- This change ensures that the contract is compatible with newer Solidity versions (>=0.5.x) and avoids potential issues with future upgrades.
+- 更新されたコードは Ether を送信するために、非推奨の `transfer()` の代わりに `call() メソッドを使用します。
+- `call()` メソッドはより柔軟性が高く、ガスを指定してエラーを適切に処理できるため、Solidity 0.5.x 以上で推奨されます。
+- この変更は、コントラクトが新しい Solidity バージョン (>=0.5.x) と互換があることを確保し、将来のアップグレードでの潜在的な問題を回避します。
 
 #### **チェック方法**
 - Code Review: Ensure the contract is not using any deprecated or obsolete functions. Look for any `transfer()`, `send()`, or other outdated methods, and replace them with the more secure `call()` method when sending Ether.
