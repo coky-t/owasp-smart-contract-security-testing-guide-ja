@@ -19,11 +19,11 @@ function withdraw(uint256 amount) public {
 
 ### **影響**
 
-- **Incentive Misalignment**: Incorrect economic models can lead to unbalanced incentives, where users may be encouraged to behave in ways that harm the ecosystem or undermine contract objectives.
-- **Volatility and Losses**: Fluctuating token values, such as the conversion rates between assets like cbETH and ETH, can result in user losses if not properly handled. Similarly, staking rewards, such as with rETH, can create unpredictable value changes that impact users.
-- **Reentrancy Attacks**: Poor handling of transaction flow and state changes can allow attackers to re-enter the contract during a transaction, causing unintended consequences like double withdrawals.
-- **Token Vulnerabilities**: Incorrect tokenomics, such as faulty fee application or flawed reward systems, can cause users to lose funds or receive incorrect rewards.
-- **Double-Spending and Fraud**: Weak mechanisms like duplicate Merkle proofs can expose the system to double-spending attacks and other fraud mechanisms.
+- **インセンティブの不整合**: 不正確な経済モデルはインセンティブの不均衡につながり、ユーザーがエコシステムに損害を与えたりコントラクトの目的を損なうような行動をとるように促される可能性があります。
+- **ボラティリティと損失**: cbETH や ETH などの資産間の変換レートなど、トークン価値の変動は、適切に処理されない場合、ユーザーに損失をもたらす可能性があります。同様に、rETH などのステーキング報酬は、予測不可能な価値変動を引き起こし、ユーザーに影響を及ぼす可能性があります。
+- **再入攻撃**: トランザクションフローと状態変更の処理が不十分だと、攻撃者がトランザクション中にコントラクトに再入でき、二重引き落としなどの意図しない結果を引き起こす可能性があります。
+- **トークンの脆弱性**: 不適切な料金適用や欠陥のある報酬システムなど、間違いのあるトークノミクスは、ユーザーが資金を失ったり、間違えた報酬を受け取る可能性があります。
+- **二重支払いと詐欺**: 重複した Merkle 証明などの弱いメカニズムは、システムを二重支払い攻撃やその他の詐欺メカニズムにさらず可能性があります。
 
 ### **対策**
 
