@@ -27,11 +27,11 @@ function withdraw(uint256 amount) public {
 
 ### **対策**
 
-- **Incentive Structures**: Implement a pull-based withdrawal system rather than push-based transfers to allow for proper tracking and reduce the risk of reentrancy attacks. Ensure that all economic incentives are clearly defined and aligned with desired behaviors.
-- **Tokenomics and Reward Systems**: Ensure that all token behaviors, including rebase mechanisms and reward claims, are properly handled. Prevent unexpected behaviors in tokens and validate that all claimable addresses are included in hashing processes to prevent unauthorized claims.
-- **Fluctuation Management**: Develop systems that can account for fluctuations in asset values (e.g., cbETH to ETH, rETH staking rewards) and adjust accordingly to mitigate risks for users.
-- **Transaction Flow Security**: Use patterns like check-effect-interaction to prevent reentrancy attacks, ensuring that state changes occur before external calls. Apply the NonReentrant modifier where applicable to prevent unintended recursive calls.
-- **Function Integrity**: Ensure that functions are designed to handle edge cases, such as same sender/recipient scenarios, and that they are not callable multiple times unnecessarily, avoiding potential inconsistencies or logic flaws.
+- **インセンティブ構造**: プッシュベースの送金ではなく、プルベースの引き落としシステムを実行して、適切な追跡を可能にし、再入攻撃のリスクを軽減します。すべての経済的インセンティブが明確に定義され、望ましい行動と整合していることを確保します。
+- **トークノミクスと報酬システム**: リベースメカニズムや報酬請求を含む、すべてのトークンの動作が適切に処理されることを確保します。トークンの予期しない動作を防止し、不正な請求を防止するために、請求可能なすべてのアドレスがハッシュ処理に含まれていることを検証します。
+- **変動管理**: 資産価値の変動 (cbETH から ETH、rETH ステーキング報酬など) を考慮し、それに応じて調整してユーザーのリスクを緩和できるシステムを開発します。
+- **トランザクションフローセキュリティ**: 再入攻撃を防ぐために check-effect-interaction などのパターンを使用し、外部呼び出しの前に状態変更が発生するようにします。意図しない再起呼び出しを防ぐため、該当する場合は NonReentrant 修飾子を適用します。
+- **関数の完全性**: 関数が同じ送信者/受信者のシナリオなど、エッジケースを処理するように設計されていること、また潜在的な不一致や論理上の欠陥を避けるために関数が不必要に複数回呼び出されないことを確保します。
 
 
 
