@@ -53,8 +53,8 @@ contract IncentiveModel {
 }
 ```
 #### **なぜ脆弱なのか**
-- If the `users` array is empty, the division by zero will occur, leading to a runtime exception.
-- Additionally, if the reward pool is too small or the number of users is too large, it could cause unexpected behavior, leading to attackers exploiting the system by flooding the contract with too many addresses.
+- `users` 配列が空の場合、ゼロ除算が発生し、ランタイム例外につながります。
+- さらに、報酬プールが小さすぎる場合やユーザー数が多すぎる場合、予期しない動作を引き起こす可能性があり、攻撃者が過剰に多くのアドレスでコントラクトをフラッディングしてシステムを悪用することにつながります。
 
 #### 修正されたコード:
 
