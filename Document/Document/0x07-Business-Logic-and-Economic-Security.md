@@ -80,5 +80,5 @@ contract SecureIncentiveModel {
 ```
 
 #### **チェック方法**
-- **Code Review:** Look for scenarios where division or mathematical operations could result in errors like division by zero or unintended behavior due to extreme input values.
-- **Dynamic Testing:** Test the function with edge cases such as empty user lists, very large user arrays, and reward pool sizes. Ensure that the system handles these cases gracefully and does not allow unexpected errors or exploits.
+- **コードレビュー:** 除算や算術演算が、ゼロ除算などのエラーや、極端な入力値による意図しない動作となる可能性のあるシナリオを探します。
+- **動的テスト:** 空のユーザーリスト、非常に大きなユーザー配列、報酬プールのサイズなどのエッジケースで関数をテストします。システムがこれらのケースを適切に処理し、予期しないエラーやエクスプロイトを許容しないことを確認します。
