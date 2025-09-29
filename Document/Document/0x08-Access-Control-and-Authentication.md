@@ -31,8 +31,8 @@ function burn(address account, uint256 amount) public
 ### **対策**
 
 
-- Ensure initialization functions can only be called once and exclusively by authorized entities.
-- Use established access control patterns like Ownable or RBAC (Role-Based Access Control) in your contracts to manage permissions and ensure that only authorized users can access certain functions. This can be done by adding appropriate access control modifiers, such as onlyOwner or custom roles to sensitive functions.
+- 初期化関数は認可されたエンティティによってのみ一度だけ呼び出されるようにします。
+- コントラクトにおいて Ownable や RBAC (Role-Based Access Control) などの確立されたアクセス制御パターンを使用してパーミッションを管理し、認可されたユーザーのみが特定の機能にアクセスできるようにします。これは onlyOwner などの適切なアクセス制御修飾子や、機密性の高い機能へのカスタムロールを追加することで実現できます。
 
 ### 不適切なアクセス制御攻撃の被害を受けたスマートコントラクトの事例:
 
