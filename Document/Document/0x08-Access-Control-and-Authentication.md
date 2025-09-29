@@ -2,15 +2,15 @@
 
 ### **説明**
 
-Improper access control is a critical security vulnerability in smart contracts that occurs when unauthorized users can access or modify sensitive functions or data. This issue typically arises when the code does not enforce strict access restrictions based on user permissions.
+不適切なアクセス制御はスマートコントラクトにおける重大なセキュリティ脆弱性であり、認可されていないユーザーが機密性の高い機能やデータにアクセスしたり、変更できる場合に発生します。この問題は一般的に、コードがユーザーのパーミッションに基づいた厳格なアクセス制御を適用していない場合に発生します。
 
-Access control vulnerabilities are especially significant in scenarios involving governance or critical operations, such as:
+アクセス制御の脆弱性は、以下のような、ガバナンスや重要な操作に関わるシナリオにおいて特に深刻です。
 
-- Minting tokens
-- Voting on proposals
-- Withdrawing funds
-- Pausing or upgrading contracts
-- Changing contract ownership
+- トークンの発行
+- 提案への投票
+- 資金の引き落とし
+- コントラクトの一時停止またはアップグレード
+- コントラクトの所有者の変更
 
 ### **例: 適切なアクセス制御のないコード**
 
