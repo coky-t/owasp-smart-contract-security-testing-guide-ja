@@ -24,8 +24,8 @@ function burn(address account, uint256 amount) public
 ```
 ### **影響**
 
-- Attackers can gain unauthorized access to critical functions and data within the contract, compromising its integrity and security.
-- Vulnerabilities can lead to the theft of funds or assets controlled by the contract, causing significant financial damage to users and stakeholders.
+- 攻撃者はコントラクト内の重要な機能やデータに不正アクセスし、その完全性とセキュリティを侵害する可能性があります。
+- 脆弱性はコントラクトで管理されている資金や資産の盗難につながり、ユーザーや利害関係者に重大な経済的損害をもたらす可能性があります。
 
 
 ### **対策**
