@@ -135,26 +135,26 @@ ___
 ## 最小権限の原則のテスト (Least Privilege Principle Test)
 
 
-Use msg.sender instead of tx.origin for authorization to avoid potential abuse from malicious contracts; include checks like require(tx.origin == msg.sender) to ensure the sender is an EOA.
+悪意のあるコントラクトからの潜在的な悪用を避けるため、認可には tx.origin ではなく msg.sender を使用します。送信者が EDA であることを確認するために require(tx.origin == msg.sender) などのチェックを含めます。
 
-- tx.origin can be abused by malicious contracts to trick the system into performing actions on behalf of an unsuspecting user. msg.sender is preferred since it refers to the direct sender of the message.
+- tx.origin は悪意のあるコントラクトによって悪用され、システムを騙して、何も知らないユーザーの代わりにアクションを実行する可能性があります。メッセージの直接の送信者を参照するため、msg.sender が推奨されます。
 ```solidity
 require(msg.sender == owner, "Not the owner");
 require(tx.origin == msg.sender, "Only EOA can execute");
 ```
 
-Certain addresses might be blocked or restricted from receiving tokens (e.g., LUSD). Ensure that address restrictions are properly managed and verified.
+特定のアドレス (LUSD など) はトークンの受信からブロックまたは制限されているかもしれません。アドレス制限が適切に管理および検証されていることを確認します。
 
-- If certain addresses (like LUSD) should be blocked from receiving tokens, ensure that there’s a check in place to restrict these addresses.
+- 特定のアドレス (LUSD など) がトークンの受信からブロックされる必要がある場合、これらのアドレスを制限するために実施されるチェックがあることを確認します。
 ```solidity
 address restrictedAddress = 0x123...;  // Example of a restricted address
 require(msg.sender != restrictedAddress, "Restricted address cannot perform this operation");
 ```
 
 
-Ensure that Guard’s hooks (e.g., checkTransaction(), checkAfterExecution()) are executed to enforce critical security checks.
+重要なセキュリティチェックを実施するために Guard のフック (checkTransaction(), checkAfterExecution() など) が実行されていることを確認します。
 
-- If using a Guard contract, ensure that hooks like checkTransaction() or checkAfterExecution() are properly implemented to enforce security conditions.
+- Guard コントラクトを使用している場合、checkTransaction() や checkAfterExecution() などのフックが適切に実装され、セキュリティ条件が適用されるようにします。
 ```solidity
 function checkTransaction() internal {
     // Add conditions to verify transaction before execution
