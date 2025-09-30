@@ -191,9 +191,9 @@ function checkAfterExecution() internal {
 
 
 
-Ensure that access controls are implemented correctly to determine who can use certain functions, and avoid unauthorized changes or withdrawals.
+アクセス制御が正しく実装され、特定の機能を誰が使用できるかを判断し、不正な変更や引き落としを回避していることを確認します。
 
-- Ensure that functions requiring specific roles or permissions are restricted properly using onlyOwner or role-based checks.
+- 特定のロールやパーミッションを必要とする関数が onlyOwner またはロールベースのチェックを使用して適切に制限されていることを確認します。
 
 ```solidity
     modifier onlyOwner() {
