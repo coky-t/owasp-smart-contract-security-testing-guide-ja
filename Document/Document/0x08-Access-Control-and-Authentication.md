@@ -115,16 +115,16 @@ ___
 ## アイデンティティ検証のテスト (Identity Verification Test)
 
 
-Validate that unexpected addresses do not result in unintended behaviors, particularly when these addresses refer to contracts within the same protocol.
+予期しないアドレスが、特に、これらのアドレスが同じプロトコル内のコントラクトを参照している場合、意図しない動作を引き起こさないことを検証します。
 
-- Ensure that when interacting with contracts, unexpected addresses are properly validated before performing sensitive operations.
+- コントラクトとやり取りする際、機密性の高い操作を実行する前に予期しないアドレスが適切に検証されていることを確認します。
 ```solidity
 require(address(contract) != address(0), "Invalid address");
 ```
 
-Verify that functions like ecrecover handle all potential null addresses properly to avoid vulnerabilities arising from unexpected ecrecover outputs.
+予期しない ecrecover 出力から生じる脆弱性を回避するために、ecrecover などの関数がすべての潜在的な null アドレスを適切に処理することを検証します。
 
-- Ensure that ecrecover does not process empty or null addresses.
+- ecrecover が空または null アドレスを処理しないことを確認します。
 ```solidity
 address recovered = ecrecover(messageHash, v, r, s);
 require(recovered != address(0), "Invalid signature");
