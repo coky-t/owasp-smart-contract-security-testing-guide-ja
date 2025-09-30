@@ -42,11 +42,11 @@ function burn(address account, uint256 amount) public
 ## マルチ署名スキームのテスト (Testing Multi-Signature Schemes)
 
 
-Ensure that multi-signature schemes are implemented for critical operations, requiring approvals from multiple authorized parties to enhance security and reduce the risk of unauthorized actions.
+重要な操作にはマルチ署名スキームが実装されていることを確認し、複数の承認者からの承認を要求することで、セキュリティを強化し、不正なアクションのリスクを軽減します。
 
-- Verify that the multi-signature logic ensures a configurable threshold of approvals before executing sensitive operations.  
-- Confirm that all signers are authenticated and that duplicate signatures are rejected.  
-- Test edge cases, such as insufficient approvals or tampered data.
+- 機密性の高い操作を実行する前に、マルチ署名ロジックが構成可能な承認の閾値を確保していることを検証します。
+- すべての署名者が認証されており、重複した署名が拒否されることを確認します。
+- 不十分な承認や改竄されたデータなど、エッジケースをテストします。
 
 ```solidity
 // Example of multi-signature scheme
@@ -108,7 +108,7 @@ contract MultiSigWallet {
     receive() external payable {}
 }
 ```
-Review the logic to ensure all approvals are validated before execution, duplicate approvals are prevented, and transaction data integrity is maintained. Test with various approval scenarios to verify proper handling of edge cases.
+ロジックをレビューして、すべての承認が実行前に検証され、重複する承認が防止され、トランザクションデータの完全性が維持されていることを確認します。さまざまな承認シナリオでテストを行い、エッジケースの適切な処理を検証します。
 
 ___
 
