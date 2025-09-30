@@ -211,17 +211,17 @@ function checkAfterExecution() internal {
 ## マークルツリーを使用するアクセス制御のテスト (Test Access Control Using Merkle Trees)
 
 
-Ensure that `msg.sender` validation is properly implemented when using Merkle trees to maintain security and prevent unauthorized access.
+セキュリティを維持し、不正アクセスを防ぐためにマークルツリーを使用する場合は、`msg.sender` バリデーションが適切に実装されていることを確認します。
 
-- When using Merkle trees to authenticate users or grant permissions, ensure that the contract verifies that `msg.sender` matches the expected address and Merkle proof. This prevents unauthorized actors from bypassing security by submitting incorrect proofs.
+- マークルツリーを使用してユーザーを認証したりパーミッションを付与する場合、コントラクトは `msg.sender` が期待されるアドレスおよびマークル証明と一致することを検証するようにします。これは、不正な証明を提出することでセキュリティを回避しようとする不正行為者を防ぎます。
 
 ```solidity
     require(verifyMerkleProof(msg.sender, merkleProof), "Invalid Merkle proof");
 ```
 
-- Use whitelisting to restrict interactions to a specific set of addresses, providing additional security against malicious actors.
+- ホワイトリストを使用して、特定のアドレスセットとのやり取りを制限し、悪意のある行為者に対する追加のセキュリティを提供します。
 
-- Implement a whitelisting mechanism that allows only approved addresses to interact with specific functions. Ensure that only addresses explicitly added to the whitelist are able to execute sensitive operations.
+- 承認されたアドレスのみが特定の関数とやり取りできるようにするホワイトリストメカニズムを実装します。ホワイトリストに明示的に追加されたアドレスのみが機密性の高い操作を実行できるようにします。
 
 ```solidity
     address[] public whitelist;
@@ -242,9 +242,9 @@ Ensure that `msg.sender` validation is properly implemented when using Merkle tr
         whitelist.push(_address);
     }
 ```
-- Ensure that functions modifying the contract state or accessing sensitive operations have proper access controls implemented.
+- コントラクトの状態を変更したり、機密性の高い操作にアクセスする関数には適切なアクセス制御が実装されていることを確認します。
 
-- Critical functions, such as those that modify contract state or handle sensitive information, should only be callable by authorized addresses (e.g., the owner or an admin). Use modifiers to enforce access controls for these functions.
+- コントラクトの状態を変更したり、機密性の高い操作にアクセスするような重要な関数は、認可されたアドレス (所有者や管理者など) からのみ呼び出し可能にする必要があります。修飾子を使用して、これらの関数へのアクセス制御を強制します。
 
 ```solidity
     modifier onlyOwner() {
