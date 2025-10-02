@@ -3,7 +3,7 @@
 
 ### **説明**
 
-Unchecked external calls occur when a smart contract makes an external call to another contract or address without verifying the call's outcome. In Ethereum, external calls may fail silently, and the calling contract may mistakenly proceed as if the call succeeded. This leads to state inconsistencies and potential exploitation. The issue is particularly risky in functions like delegatecall, send, or call, where the outcome must be explicitly checked.
+チェックされていない外部呼び出しは、スマートコントラクトが呼び出しの結果を検証せずに別のコントラクトやアドレスへの外部呼び出しを行う場合に発生します。Ethereum では、外部呼び出しがサイレントに失敗し、呼び出し元のコントラクトが誤って呼び出しが成功したかのように処理を進める可能性があります。これは状態の不整合や潜在的な悪用につながります。この問題は delegatecall, send, call などの関数において、結果を明示的にチェックする必要があるため、特に危険です。
 
 ### **例: 適切なアクセス制御のないコード**
 
