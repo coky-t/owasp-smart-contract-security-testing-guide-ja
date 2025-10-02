@@ -25,9 +25,9 @@ contract Proxy {
 ```
 ### **影響**
 
-- When external calls fail and their results are unchecked, the contract can proceed under incorrect assumptions, leading to potential loss of funds or other unexpected behaviors.
-- Unverified external calls can lead to incorrect updates to the contract state, making it vulnerable to exploits and logical inconsistencies.
-- Attackers can manipulate such vulnerabilities to execute malicious code or withdraw funds multiple times.
+- 外部呼び出しが失敗し、その結果がチェックされていない場合、コントラクトは誤った仮定に基づいて処理を進める可能性があり、資金の損失やその他の予期しない動作につながる可能性があります。
+- 検証されていない外部呼び出しはコントラクトの状態の誤った更新につながる可能性があり、エクスプロイトや論理的な不整合に対して脆弱になります。
+- 攻撃者はこのような脆弱性を操作して、悪意のあるコードを実行したり、資金を複数回引き落としできます。
 
 
 ### **対策**
