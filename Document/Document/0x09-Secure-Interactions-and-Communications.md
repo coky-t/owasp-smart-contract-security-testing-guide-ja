@@ -60,8 +60,8 @@ contract VulnerableContract {
 ```
 
 #### **なぜ脆弱なのか**
-- The contract uses `.call` to make external calls, which is generally unsafe and susceptible to reentrancy attacks.
-- The function allows anyone to trigger the call and transfer funds, exposing the contract to potential attacks.
+- このコントラクトは外部呼び出しをするために `.call` を使用していますが、これは一般的に安全ではなく、再入攻撃の影響を受けやすくなります。
+- この関数は、誰でも呼び出しをトリガーして資金を送金できるため、コントラクトが潜在的な攻撃にさらされます。
 
 
 #### 修正されたコード:
