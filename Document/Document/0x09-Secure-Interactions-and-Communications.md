@@ -33,9 +33,9 @@ contract Proxy {
 ### **対策**
 
 
-- Use safer methods such as transfer() over send() when transferring Ether. The transfer() function reverts automatically if the call fails.
-- For low-level functions like call and delegatecall, always check the return value and handle failures appropriately.
-- Limit interactions with untrusted contracts and ensure robust validation before performing critical operations.
+- Ether を転送する際は send() ではなく transfer() などのより安全なメソッドを使用します。transfer() 関数は、呼び出しが失敗した場合、自動的に元に戻ります。
+- call や delegatecall などの低レベル関数では、常に戻り値をチェックし、失敗を適切に処理します。
+- 信頼できないコントラクトとのやり取りを制限し、重要な操作を実行する前に堅牢なバリデーションを実施します。
 
 ---
 
