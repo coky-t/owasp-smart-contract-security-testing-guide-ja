@@ -16,7 +16,7 @@ function verifySignature(address signer, bytes32 message, bytes memory signature
 }
 ```
 
-In this example, the `ecrecover` function is used without ensuring that the signature is valid, which may lead to vulnerabilities like signature malleability or invalid data recovery.
+この例では、署名が有効かどうかを確認せずに `ecrecover` 関数が使用されているため、署名の可鍛性や無効なデータリカバリなどの脆弱性につながる可能性があります。
 
 ### **影響**
 
