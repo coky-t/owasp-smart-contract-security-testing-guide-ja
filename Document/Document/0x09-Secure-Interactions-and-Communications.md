@@ -84,6 +84,6 @@ contract SecureContract {
 }
 ```
 #### **チェック方法**
-- **Code Review:** Look for external calls in the contract and ensure that they are using safe methods such as `transfer` or `send` where appropriate, or implementing reentrancy protection.
-- **Static Analysis:** Use static analysis tools like SolidityScan, MythX or Slither to detect unsafe calls in the code.
-- **Dynamic Testing:** Simulate a reentrancy attack by deploying a contract that calls the vulnerable contract and tries to drain funds.
+- **コードレビュー:** コントラクト内の外部呼び出しを探し、適切な場所で `transfer` や `send` などの安全なメソッドを使用しているか、再入保護を実装していることを確認します。
+- **静的解析:** SolidityScan, MythX, Slither などの静的解析ツールを使用して、コード内の安全でない呼び出しを検出します。
+- **動的テスト:** 脆弱なコントラクトを呼び出して資金を流出することを試みるコントラクトをデプロイすることで、再入攻撃をシミュレートします。
