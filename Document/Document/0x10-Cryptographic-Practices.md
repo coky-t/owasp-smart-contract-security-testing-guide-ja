@@ -20,10 +20,10 @@ function verifySignature(address signer, bytes32 message, bytes memory signature
 
 ### **影響**
 
-- **Unauthorized Access**: Weak cryptographic practices can allow attackers to forge signatures or impersonate users, leading to unauthorized actions within the contract.
-- **Reentrancy Attacks**: If cryptographic functions are used to validate external calls, attackers could exploit weak or improperly implemented logic to re-enter the contract.
-- **Manipulation of Outcomes**: Predictable or weak random number generation could allow attackers to manipulate outcomes in systems relying on randomness, such as lotteries or gaming dApps.
-- **Replay Attacks**: Insufficient signature validation can result in replay attacks where signed messages are reused across different contexts, allowing attackers to perform unintended actions.
+- **不正アクセス**: 脆弱な暗号化手法は、攻撃者が署名を偽造したり、ユーザーになりすまして、コントラクト内で不正なアクションにつながる可能性があります。
+- **再入攻撃**: 暗号化関数が外部呼び出しを検証するために使用されている場合、攻撃者は脆弱なロジックや不適切に実装されたロジックを悪用してコントラクトに再入する可能性があります。
+- **結果の操作**: 予測可能または脆弱な乱数生成は、くじやゲーム系 dApps など、ランダム性に依存するシステムにおいて攻撃者が結果を操作できる可能性があります。
+- **リプレイ攻撃**: 不十分な署名バリデーションは、署名されたメッセージがさまざまなコンテキストで再使用されるリプレイ攻撃につながり、攻撃者が意図しないアクションを実行できる可能性があります。
 
 ### **対策**
 
