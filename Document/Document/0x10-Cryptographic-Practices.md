@@ -2,9 +2,9 @@
 
 ### **説明**
 
-Cryptographic practices in smart contracts ensure that sensitive operations, such as authentication, data integrity, and randomness, are protected from malicious manipulation. Secure key management, signature verification, and proper random number generation are essential to prevent vulnerabilities like unauthorized access, replay attacks, and exploitation of weaknesses in cryptographic operations.
+スマートコントラクトにおける暗号化の実践は、認証、データ完全性、ランダム性といった機密性の高い操作が悪意のある操作から保護されることを確保します。安全な鍵管理、署名検証、適切な乱数生成は、不正アクセス、リプレイ攻撃、暗号化操作の脆弱性の悪用といった脆弱性を防ぐために不可欠です。
 
-Improper cryptographic practices can lead to severe consequences, including unauthorized transactions, predictable outcomes, and security breaches.
+適切な暗号化の実践は、不正なトランザクション、予測可能な結果、セキュリティ侵害などの深刻な結果につながる可能性があります。
 
 ### **例: 不適切な署名検証**
 
