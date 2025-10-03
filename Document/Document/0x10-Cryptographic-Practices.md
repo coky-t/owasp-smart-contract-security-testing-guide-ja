@@ -27,10 +27,10 @@ function verifySignature(address signer, bytes32 message, bytes memory signature
 
 ### **対策**
 
-- **Key Management**: Ensure that private keys are securely stored, never hardcoded in contracts, and use hardware solutions for key management.
-- **Signature Verification**: Implement proper checks for signature validity, including handling signature malleability by using nonces or hashed messages.
-- **Randomness**: Use secure sources of entropy, such as Chainlink VRF (Verifiable Random Function), to ensure the randomness cannot be manipulated.
-- **Compliance with Standards**: Ensure compliance with cryptographic standards like EIP-712 to prevent signature malleability and other vulnerabilities.
+- **鍵管理**: 秘密鍵 (private key) が安全に保管され、コントラクトにハードコードされていないようにし、鍵管理にはハードウェアソリューションを使用します。
+- **署名検証**: ノンスやハッシュ化されたメッセージを使用して署名の可鍛性を処理するなど、署名の妥当性の適切なチェックを実装します。
+- **ランダム性**: Chainlink VRF (Verifiable Random Function) など、安全なエントロピーソースを使用して、ランダム性が操作されないようにします。
+- **標準への準拠**: 署名の可鍛性やその他の脆弱性を防ぐために EIP-712 などの暗号化標準に準拠するようにします。
 
 
 
