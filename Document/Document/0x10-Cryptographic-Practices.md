@@ -96,8 +96,8 @@ contract RandomNumberGenerator {
 
 #### **なぜ脆弱なのか**
 
-- The contract uses block properties like `block.timestamp` and `block.difficulty` to generate random numbers, which can be manipulated by miners or validators.
-- This weak random number generation can lead to predictable values, making the contract vulnerable to attacks such as manipulation of lottery or gambling outcomes.
+- コントラクトは `block.timestamp` や `block.difficulty` などのブロックプロパティを使用して乱数を生成しますが、マイナーやバリデーターによって操作される可能性があります。
+- この弱い乱数生成は予測可能な値につながる可能性があり、くじやギャンブルの結果の操作などの攻撃に対してコントラクトが脆弱になります。
 
 #### 修正されたコード:
 
