@@ -116,5 +116,5 @@ contract SecureRandomNumberGenerator {
 ```
 
 ### **チェック方法**
-- **Code Review:** Ensure that random numbers are not derived from predictable values like block properties. Check if external secure sources like `Chainlink VRF` are being used for randomness.
-- **Dynamic Testing:** Test contract behavior under adversarial conditions to ensure the randomness cannot be predicted or manipulated.
+- **コードレビュー:** 乱数がブロックプロパティなどの予測可能な値から導出されていないことを確認します。`Chainlink VRF` などの外部の安全なソースがランダム性に使用されているかどうかをチェックします。
+- **動的テスト:** 敵対的な条件下でコントラクトの動作をテストし、ランダム性が予測または操作できないことを確認します。
