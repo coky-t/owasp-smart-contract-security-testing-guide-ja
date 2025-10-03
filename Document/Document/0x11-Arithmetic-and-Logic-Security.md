@@ -2,7 +2,7 @@
 
 ### **説明**
 
-Arithmetic and logic security in smart contracts ensures that mathematical operations are performed safely and with integrity. These operations must be protected against overflows, underflows, precision loss, and other logical errors that could lead to unexpected behaviors, vulnerabilities, or financial losses. Proper handling of arithmetic operations, particularly for asset balances, time units, and fixed-point calculations, is critical for ensuring the stability and security of smart contracts. This also includes managing preconditions and postconditions to ensure correct function execution and preventing vulnerabilities such as division by zero or off-by-one errors.
+スマートコントラクトにおける算術と論理のセキュリティは、数学演算が安全かつ完全性とともに実行されることを確保します。これらの演算は、オーバーフロー、アンダーフロー、精度の低下、その他の予期しない動作、脆弱性、経済的損失につながる論理エラーから保護される必要があります。特に資産残高、時間単位、固定小数点計算など、算術演算の適切な処理は、スマートコントラクトの安定性とセキュリティを確保するために不可欠です。これには、正しい関数実行を確保するための事前条件と事後条件の管理や、ゼロ除算や off-by-one エラーなどの脆弱性の防止も含みます。
 
 ### **例: オーバーフローとアンダーフローの防止**
 
