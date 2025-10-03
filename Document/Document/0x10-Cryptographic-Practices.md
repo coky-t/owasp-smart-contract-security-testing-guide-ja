@@ -52,9 +52,9 @@ contract SignatureVerification {
 
 #### **なぜ脆弱なのか**
 
-- The contract uses `ecrecover` directly without verifying the message structure.
-- Attackers could use a replay attack by reusing the signature from another message to authenticate different transactions.
-- The lack of proper checks makes the contract vulnerable to attacks where the attacker can forge or replay signatures.
+- コントラクトはメッセージ構造を検証せずに直接 `ecrecover` を使用します。
+- 攻撃者は、別のメッセージの署名を再使用して異なるトランザクションを認証することで、リプレイ攻撃を行う可能性があります。
+- 適切なチェックの欠如は、攻撃者が署名を偽造またはリプレイできる攻撃に対して、コントラクトが脆弱になります。
 
 #### 修正されたコード:
 
