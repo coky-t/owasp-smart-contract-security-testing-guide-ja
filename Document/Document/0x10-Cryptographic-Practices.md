@@ -73,8 +73,8 @@ contract SecureSignatureVerification {
 ```
 
 ### **チェック方法**
-- **Code Review:** Verify that signatures are being properly validated using standards like EIP-712, and that the contract uses `ecrecover` securely. Ensure that messages are hashed and prefixed correctly before recovery.
-- **Dynamic Testing:** Test with replayed or malformed signatures to verify that the contract rejects such transactions.
+- **コードレビュー:** 署名が EIP-712 などの標準を使用して適切に検証されていること、およびコントラクトが `ecrecover` を安全に使用していることを検証します。リカバリ前に、メッセージがハッシュ化され、正しくプレフィックス付けされていることを確認します。
+- **動的テスト:** リプレイされた署名や不正な署名でテストして、コントラクトがそのようなトランザクションを拒否することを検証します。
 
 
 ---
