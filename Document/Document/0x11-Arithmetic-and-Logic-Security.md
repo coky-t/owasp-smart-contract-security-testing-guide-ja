@@ -17,7 +17,7 @@ function transfer(uint256 amount) public {
 }
 ```
 
-In this example, `SafeMath` is used to protect against integer overflow and underflow, ensuring that operations on token balances are secure.
+この例では、`SafeMath` を使用して整数オーバーフローとアンダーフローを防ぎ、トークン残高の演算が安全であることを確保します。
 
 
 ### **影響**
