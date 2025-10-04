@@ -137,8 +137,8 @@ contract NestedLoopExample {
 
 #### **なぜ脆弱なのか**
 
-Nested loops increase the complexity of the operation, leading to higher gas costs as input size increases.  
-- Large datasets could render the function unusable within the gas limits, causing DoS conditions.  
+ネストされたループは操作の複雑さを増し、入力サイズの増加に伴いガスコストの高騰につながります。
+- 大規模なデータセットはガス制限内で関数を使用できなくなり、DoS 状態を発生する可能性があります。
 
 #### **チェック方法**
 - **Code Review:** Examine nested loops in the code and assess their gas consumption relative to the input size.  
