@@ -35,9 +35,9 @@ contract GasDoSVulnerable {
 
 #### 効率的なループと関数の設計 (Efficient Loop and Function Design):
 
-- Optimize functions with loops to reduce gas consumption and prevent DoS attacks by ensuring that loops operate with fixed or minimal input sizes. Avoid using large dynamic data arrays in loops.
-- Ensure critical functions, like `burn()`, handle failures gracefully, so that the contract does not enter an unrecoverable state.
-- Protect against griefing attacks by managing gas consumption carefully, ensuring that operations are efficient and do not hit gas limits.
+- ループのある関数を最適化し、ガス消費量を削減して DoS 攻撃を防ぎます。ループは固定または最小限の入力サイズで動作するようにします。ループに大規模な動的データ配列を使用することは避けます。
+- `burn()` など、重要な関数が障害を適切に処理し、コントラクトが回復不能な状態にならないようにします。
+- ガス消費量を慎重に管理することでグリーフィング攻撃から保護し、操作が効率的に行われ、ガス制限にヒットしないようにします。
 
 #### フォールバックメカニズム (Fallback Mechanisms):
 
