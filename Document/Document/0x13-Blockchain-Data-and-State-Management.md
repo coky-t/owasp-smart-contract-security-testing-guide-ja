@@ -72,11 +72,11 @@ contract DataPrivacy {
 
 ### **分析:**
 
-1. **Sensitive Data Exposure**:  
-   The `logBalance` function emits an event that includes a user’s balance. While useful for transparency, it exposes sensitive financial information publicly, violating user privacy.
+1. **機密データの開示**:  
+   `logBalance` 関数はユーザーの残高を含むイベントを発行します。透明性には役立ちますが、機密性の高い金融情報を公開し、ユーザーのプライバシーを侵害します。
 
-2. **Lack of Encryption**:  
-   Sensitive data is logged in plaintext, making it readable to anyone inspecting the blockchain. This is a critical privacy concern for applications requiring confidentiality.
+2. **暗号化の欠如**:  
+   機密データがプレーンテキストでログ記録されるため、ブロックチェーンを検査するすべての人に読み取りできます。これは機密性を必要とするアプリケーションにとって重大なプライバシー上の懸念事項です。
 
 ---
 
