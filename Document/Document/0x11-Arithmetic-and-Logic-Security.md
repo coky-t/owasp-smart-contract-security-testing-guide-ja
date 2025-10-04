@@ -120,5 +120,5 @@ contract FixedPointExample {
 ```
 
 #### **チェック方法**
-- **Code Review:** Verify that fixed-point arithmetic is implemented using appropriate scaling factors (e.g., 1e18) to avoid precision loss.  
-- **Dynamic Testing:** Test the function with small values for `_rewardPercentage` and check that the result is accurate, verifying that there is no unexpected rounding behavior.
+- **コードレビュー:** 固定小数点算術演算が適切なスケーリング係数 (1e18 など) を使用して実装され、精度の低下を回避していることを検証します。
+- **動的テスト:** `_rewardPercentage` に小さな値で関数をテストし、結果が正確であることをチェックし、予期しない丸め動作がないことを検証します。
