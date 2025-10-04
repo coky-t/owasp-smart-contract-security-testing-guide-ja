@@ -26,10 +26,10 @@ contract GasDoSVulnerable {
 ```
 ### **影響**
 
-- **Gas Limit Exhaustion**: Functions that rely on loops with dynamic input sizes or unoptimized logic can lead to excessive gas consumption. This can result in transactions exceeding the block gas limit, causing out-of-gas errors or failing to complete.
-- **Transaction Failures**: Without adequate handling of gas usage or error conditions, contracts can fail unexpectedly, preventing legitimate operations and denying service to users.
-- **Resource Exhaustion**: Improperly managed resource consumption, such as large data queries or excessive loop iterations, can overwhelm the system, causing DoS by exhausting computational resources or making the contract unavailable for further interactions.
-- **Increased Transaction Costs**: Inefficient gas usage may lead to higher transaction fees, discouraging users from interacting with the contract or causing network congestion.
+- **ガス制限の枯渇**: 動的な入力サイズや最適化されていないロジックでのループに依存する関数は、過剰なガス消費につながる可能性があります。これは、トランザクションがブロックのガス制限を超え、ガス不足エラーが発生し、完了に失敗する可能性があります。
+- **トランザクションの失敗**: ガス使用量やエラー状態を適切に処理しないと、コントラクトが予期せず失敗し、正当な操作を妨げ、ユーザーへのサービスを拒否する可能性があります。
+- **リソース枯渇**: 大規模なデータクエリや過度のループ反復など、リソース消費が適切に管理されていないと、システムを過負荷にし、計算リソースを枯渇して DoS を発生したり、コントラクトがそれ以上のやり取りに利用できなくなる可能性があります。
+- **トランザクションコストの増加**: ガスの使用効率が悪いと、トランザクション手数料が上昇し、ユーザーがコントラクトとやり取りすることを妨げたり、ネットワークの輻輳を引き起こすことにつながる可能性があります。
 
 ### **対策**
 
