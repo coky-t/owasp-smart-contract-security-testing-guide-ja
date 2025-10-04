@@ -52,9 +52,9 @@ contract GasDoSVulnerable {
 
 #### エラー処理 (Error Handling):
 
-- Ensure that assertions do not lead to DoS by carefully checking conditions and ensuring that failures are handled appropriately, rather than causing reverts that impact overall system availability.
-- Protect against DoS due to unexpected reverts by considering all possible failure scenarios in the contract's logic and providing proper fallback solutions.
-- Ensure functions like `supportsERC165InterfaceUnchecked()` in the ERC165Checker.sol handle large data queries efficiently, minimizing the risk of resource exhaustion.
+- アサーションが DoS につながらないようにします。条件を慎重にチェックし、障害が適切に処理されるようにして、システム全体の可用性に影響を及ぼすリバートの発生を避けます。
+- コントラクトのロジックで考えられるすべての障害シナリオを考慮し、適切なフォールバックソリューションを提供することで、予期しないリバートによる DoS から保護します。
+- ERC165Checker.sol の `supportsERC165InterfaceUnchecked()` などの関数が大規模なデータクエリを効率的に処理し、リソース枯渇のリスクを最小限に抑えるようにします。
 
 ---
 
