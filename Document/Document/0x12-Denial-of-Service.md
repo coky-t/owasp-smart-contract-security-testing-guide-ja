@@ -87,9 +87,9 @@ contract UnboundedLoopExample {
 - 攻撃者は配列を埋めることでこれを悪用し、正当なユーザーがこの関数を使用できなくなる可能性があります。
 
 #### **チェック方法**
-- **Code Review:** Look for `for` or `while` loops operating on dynamic arrays or mappings without size constraints.  
-- **Dynamic Input Testing:** Test the function with a large dataset to simulate its behavior near the gas limit.  
-- **Review Documentation:** Ensure the contract specifies constraints on data growth and function usage.  
+- **コードレビュー:** サイズ制約のない動的配列やマッピングに対して動作する `for` ループや `while` ループを探します。
+- **動的入力テスト:** 大規模なデータセットで関数をテストし、ガス制限付近での動作をシミュレートします。
+- **ドキュメントのレビュー:** コントラクトがデータ増加と関数使用に関する制約を指定していることを確認します。
 
 
 #### 修正されたコード:
