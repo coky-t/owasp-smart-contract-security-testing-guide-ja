@@ -76,8 +76,8 @@ contract SafeMath {
 ```
 
 #### **チェック方法**
-- **Code Review:** Check that all arithmetic operations use libraries such as SafeMath (for older versions) or rely on Solidity 0.8’s built-in overflow checks.  
-- **Testing:** Use edge cases such as adding large values to check if the contract prevents overflow.
+- **コードレビュー:** すべての算術演算で SafeMath (古いバージョンの場合) などのライブラリを使用しているか、Solidity 0.8 で組み込まれたオーバーフローチェックに依存していることをチェックします。
+- **テスト:** 大きな値を追加するなどのエッジケースを使用して、コントラクトがオーバーフローを防いでいるかどうかをチェックします。
 
 ---
 
