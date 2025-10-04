@@ -26,7 +26,7 @@ contract GasDoSVulnerable {
 ```
 ### **影響**
 
-- **ガス制限の枯渇**: 動的な入力サイズや最適化されていないロジックでのループに依存する関数は、過剰なガス消費につながる可能性があります。これは、トランザクションがブロックのガス制限を超え、ガス不足エラーが発生し、完了に失敗する可能性があります。
+- **ガス制限の枯渇**: 動的な入力サイズや最適化されていないロジックでのループに依存する関数は、過剰なガス消費につながる可能性があります。これは、トランザクションがブロックガス制限を超え、ガス不足エラーが発生し、完了に失敗する可能性があります。
 - **トランザクションの失敗**: ガス使用量やエラー状態を適切に処理しないと、コントラクトが予期せず失敗し、正当な操作を妨げ、ユーザーへのサービスを拒否する可能性があります。
 - **リソース枯渇**: 大規模なデータクエリや過度のループ反復など、リソース消費が適切に管理されていないと、システムを過負荷にし、計算リソースを枯渇して DoS を発生したり、コントラクトがそれ以上のやり取りに利用できなくなる可能性があります。
 - **トランザクションコストの増加**: ガスの使用効率が悪いと、トランザクション手数料が上昇し、ユーザーがコントラクトとやり取りすることを妨げたり、ネットワークの輻輳を引き起こすことにつながる可能性があります。
@@ -82,9 +82,9 @@ contract UnboundedLoopExample {
 
 #### **なぜ脆弱なのか**
 
-The loop iterates over the entire `data` array, which could grow indefinitely.  
-- For large arrays, gas consumption may exceed the block gas limit, causing the transaction to fail.  
-- Attackers could exploit this by filling the array, making the function unusable for legitimate users.  
+ループは、無限に大きくなる可能性のある、`data` 配列全体を反復処理します。
+- 大規模な配列では、ガス消費量がブロックガス制限を超え、トランザクションが失敗する可能性があります。
+- 攻撃者は配列を埋めることでこれを悪用し、正当なユーザーがこの関数を使用できなくなる可能性があります。
 
 #### **チェック方法**
 - **Code Review:** Look for `for` or `while` loops operating on dynamic arrays or mappings without size constraints.  
