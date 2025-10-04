@@ -114,7 +114,7 @@ contract BoundedLoopExample {
 ### **テスト 2: 非効率なネストされたループを特定する**
 
 #### **目的**
-- Detect and address inefficient nested loops that exponentially increase gas consumption.
+- ガス消費量を指数関数的に増加する非効率なネストされたループを検出して対処します。
 
 
 #### 脆弱なコード:
