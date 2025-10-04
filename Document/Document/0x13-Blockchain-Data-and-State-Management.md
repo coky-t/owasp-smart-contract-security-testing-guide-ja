@@ -42,14 +42,14 @@ contract InefficientStateManagement {
 
 ### **分析:**
 
-1. **Inefficient Loops**:  
-   The `addElements` and `removeElement` functions involve iterating over large arrays. These loops consume a significant amount of gas, particularly for large datasets, potentially causing transactions to exceed the block gas limit and fail.
+1. **非効率なループ**:  
+   `addElements` 関数と `removeElement` 関数は大規模な配列を反復処理します。これらのループは、特に大規模なデータセットの場合、大量のガスを消費し、トランザクションがブロックガス制限を超えて失敗する可能性があります。
 
-2. **State Bloat**:  
-   Continuously growing the `largeArray` without mechanisms to manage its size increases on-chain storage. This leads to unnecessary state bloat and higher costs for future interactions.
+2. **状態の肥大化**:  
+   サイズを管理するメカニズムなしで `largeArray` を継続的に拡張すると、オンチェーンストレージを増加します。これは不要な状態の肥大化と以降のやり取りのコスト増につながります。
 
-3. **Error Handling**:  
-   The `require` statement for `index` is insufficient for protecting against misuse. The function does not handle scenarios where the array size changes mid-transaction due to reentrancy or other unexpected issues.
+3. **エラー処理**:  
+   `index` に対する `require` 文は誤用を防ぐには不十分です。この関数は、再入可能性やその他の予期しない問題により、トランザクションの途中で配列サイズが変化するシナリオに対応していません。
 
 
 ### **例: 機密データの露出**
