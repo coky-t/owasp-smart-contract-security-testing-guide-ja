@@ -62,7 +62,7 @@ contract GasDoSVulnerable {
 ### **テスト 1: 無制限ループを検出する**
 
 #### **目的**
-Identify and mitigate the use of unbounded loops in contract code, as they are vulnerable to excessive gas usage.  
+コントラクトコードでの無制限のループの使用は、過剰なガス使用に脆弱であるため、識別して緩和します。
 
 #### 脆弱なコード:
 ```solidity
