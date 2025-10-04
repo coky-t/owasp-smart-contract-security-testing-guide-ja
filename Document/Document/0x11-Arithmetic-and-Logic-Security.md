@@ -22,12 +22,12 @@ function transfer(uint256 amount) public {
 
 ### **影響**
 
-- **Overflow/Underflow Vulnerabilities**: If arithmetic operations are not properly checked, they can result in overflows or underflows, causing unexpected behavior such as funds being transferred incorrectly, variables being set to incorrect values, or transactions failing.
-- **Precision Loss**: In fixed-point arithmetic or when performing calculations with time units, rounding errors or precision loss can lead to inaccuracies, especially when working with fractional values in tokenomics or financial systems.
-- **Data Corruption**: Incorrect handling of data types, arrays, or structs can cause data corruption or incorrect values, potentially leading to logic flaws or vulnerabilities.
-- **Manipulated Calculations**: If critical calculations (e.g., price or rate calculations) are not secure, attackers could exploit vulnerabilities (e.g., through flash loans) to manipulate values and disrupt the contract’s logic.
-- **Transaction Failures**: Incorrectly handled division by zero or exceeding variable bounds can lead to transaction reverts or failures, disrupting contract operations and causing loss of user funds.
-- **Logical Errors**: Incorrect use of logical operators or off-by-one errors in loops can cause unintended contract behavior, which might open doors for exploits or cause incorrect results in financial operations.
+- **オーバーフロー/アンダーフロー脆弱性**: 算術演算が適切にチェックされていない場合、オーバーフローまたはアンダーフローをもたらし、資金の不正な送金、変数への不正な値の設定、トランザクションの失敗など、予期しない動作が発生する可能性があります。
+- **精度低下**: 固定小数点算術演算や時間単位の掲載を実行する際には、特にトークノミクスや金融システムで小数値を扱う場合に、丸め誤差や精度低下が不正確さにつながる可能性にあります。
+- **データ破損**: データ型、配列、構造体の不適切な処理は、データ破損や不正確な値をもたらし、論理的な欠陥や脆弱性につながる可能性があります。
+- **操作された計算**: 重要な計算 (価格や利率の計算など) が安全でない場合、攻撃者は脆弱性 (フラッシュローンを通じてなど) を悪用して値を操作し、コントラクトのロジックを乱す可能性があります。
+- **トランザクションの失敗**: ゼロ除算を不適切に処理したり、変数の境界を越えてしまうと、トランザクションを元に戻したり失敗することにつながり、コントラクト操作を中断し、ユーザー資金の損失となる可能性があります。
+- **論理エラー**: 論理演算子の不適切な使用やループでの off-by-one エラーは意図しないコントラクトの動作を引き起こし、エクスプロイトを可能にしたり、金融取引での誤った結果をもたらすかもしれません。
 
 ### **対策**
 
