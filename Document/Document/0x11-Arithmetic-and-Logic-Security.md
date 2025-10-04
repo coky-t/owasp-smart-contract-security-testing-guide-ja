@@ -57,8 +57,8 @@ contract UnsafeMath {
 }
 ```
 #### **なぜ脆弱なのか**
-The contract does not use a safe math library to perform arithmetic operations. If the balance exceeds uint256's maximum value (2^256 - 1), an overflow occurs.  
-This can result in unexpected contract behavior or a reset of the balance value, allowing attackers to manipulate the contract.
+このコントラクトは安全な数学ライブラリを使用せずに算術演算を実行しています。残高が uint256 の最大値 (2^256 - 1) を超えると、オーバーフローが発生します。
+これは、予期しないコントラクトの動作や残高のリセットをもたらし、攻撃者がコントラクトを操作できる可能性があります。
 
 #### 修正されたコード:
 
