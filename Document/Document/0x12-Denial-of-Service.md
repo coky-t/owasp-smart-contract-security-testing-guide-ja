@@ -46,9 +46,9 @@ contract GasDoSVulnerable {
 
 #### レート制限とリソース管理 (Rate Limiting and Resource Management):
 
-- Avoid blocking mechanisms that could lead to DoS attacks. For example, ensure that excessive queries or operations are handled efficiently, especially when dealing with external systems or large datasets.
-- Use rate limiting or batching for high-volume transactions to prevent overwhelming the system or consuming excessive resources.
-- Implement efficient error handling for external function calls to ensure that the contract doesn't fail or become unresponsive due to unchecked return values or failed external interactions.
+- DoS 攻撃につながる可能性のあるブロッキングメカニズムを避けます。たとえば、特に外部システムや大規模なデータセットを扱う場合、過剰なクエリや操作が効率的に処理されるようにします。
+- 大量のトランザクションにはレート制限やバッチ処理を使用し、システムの過負荷や過剰なリソース消費を防ぎます。
+- 外部関数呼び出しに対して効率的なエラー処理を実装し、未チェックの戻り値や外部とのやり取りの失敗によりコントラクトが失敗したり応答不能にならないようにします。
 
 #### エラー処理 (Error Handling):
 
