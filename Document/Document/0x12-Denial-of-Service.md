@@ -141,9 +141,9 @@ contract NestedLoopExample {
 - 大規模なデータセットはガス制限内で関数を使用できなくなり、DoS 状態を発生する可能性があります。
 
 #### **チェック方法**
-- **Code Review:** Examine nested loops in the code and assess their gas consumption relative to the input size.  
-- **Gas Profiling:** Use tools like `eth-gas-reporter` to analyze gas usage during testing.  
-- **Dynamic Testing:** Simulate scenarios with large `matrix` sizes to observe the contract’s behavior under stress.  
+- **コードレビュー:** コード内のネストされたループを調べ、入力サイズに対するガス消費量を評価します。
+- **ガスプロファイリング:** `eth-gas-reporter` などのツールを使用して、テスト時のガス使用量を解析します。
+- **動的テスト:** 大きな `matrix` サイズでのシナリオをシミュレートし、ストレス下でのコントラクトの動作を観察します。
 
 ```solidity
 pragma solidity ^0.8.0;
