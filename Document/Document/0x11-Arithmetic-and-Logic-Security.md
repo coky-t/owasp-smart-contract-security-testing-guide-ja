@@ -100,8 +100,8 @@ contract FixedPointExample {
 
 
 #### **なぜ脆弱なのか**
-The function performs division without accounting for fixed-point precision. This could result in rounding errors, especially for small percentage values.  
-Using integer division directly leads to truncation, causing inaccuracies in reward calculations.
+この関数は固定小数点を考慮せずに除算を実行します。これは、特に小さなパーセンテージ値では、丸め誤差をもたらします。
+整数除算を使用すると直ちに切り捨てにつながり、報酬計算に不正確さをもたらします。
 
 #### 修正されたコード:
 
