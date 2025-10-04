@@ -41,8 +41,8 @@ contract GasDoSVulnerable {
 
 #### フォールバックメカニズム (Fallback Mechanisms):
 
-- Implement try/catch blocks with sufficient gas to prevent unexpected failures from leaving the contract in an inconsistent or unresponsive state.
-- Design fallback mechanisms that ensure errors are caught and handled without causing DoS vulnerabilities, such as failing silently or leaving contracts in a halted state.
+- 十分なガスでの try/catch ブロックを実装し、予期せぬ障害がコントラクトを不整合状態や応答不能状態にすることを防ぎます。
+- サイレントに失敗したり、コントラクトが停止状態になるなど、DoS 脆弱性を引き起こすことなくエラーをキャッチして処理するフォールバックメカニズムを設計します。
 
 #### レート制限とリソース管理 (Rate Limiting and Resource Management):
 
