@@ -31,12 +31,12 @@ function transfer(uint256 amount) public {
 
 ### **対策**
 
-- **Overflow/Underflow Protection**: Always use SafeMath or similar libraries for arithmetic operations to prevent overflow and underflow issues. Explicit type casting and operations within `unchecked{}` blocks should be carefully managed.
-- **Fixed-Point Arithmetic**: Ensure that fixed-point arithmetic operations are conducted safely to avoid overflow, underflow, or loss of precision. Validate calculations involving fixed-point numbers to maintain accuracy.
-- **Secure Calculations**: Ensure that price, rate, or financial calculations are protected against manipulation, especially from attacks like flash loans. Handle asset balance calculations securely to prevent vulnerabilities.
-- **Logical Consistency**: Enforce proper rounding rules in calculations, validate inequalities and comparisons, and handle edge cases properly in logical operations.
-- **Pre/Post-condition Checks**: Apply precondition checks to avoid invalid calculations and ensure that multiplication is performed before division to maintain precision. Validate edge cases such as minimum transaction amounts and off-by-one errors in loops.
-- **Correct Data Handling**: Avoid unintended data type conversions or precision loss. Ensure that `abi.decode` is used within type limits to prevent overflows.
+- **オーバーフロー/アンダーフロー保護**: 算術演算には常に SafeMath や類似のライブラリを使用し、オーバーフローやアンダーフローの問題を防ぎます。明示的な型キャストや `unchecked{}` ブロック内の演算は慎重に管理する必要があります。
+- **固定小数点算術演算**: 固定小数点算術演算が安全に実行されて、オーバーフロー、アンダーフロー、精度の低下を避けるようにします。固定小数点数を含む計算を検証して精度を維持します。
+- **安全な計算**: 価格、利率、金融計算が、特にフラッシュローンなどの攻撃からの、操作に対して保護されるようにします。資産残高計算を安全に処理して脆弱性を防ぎます。
+- **論理的な一貫性**: 計算において適切な丸めルールを適用し、不等式と比較を検証し、論理演算でのエッジケースを適切に処理します。
+- **事前/事後条件チェック**: 事前条件チェックを適用して無効な計算を避け、除算の前に乗算を実行して精度を維持するようにします。最小トランザクション金額やループでの off-by-one エラーなどのエッジケースを検証します。
+- **正しいデータ処理**: 意図しない型変換や精度低下を避けます。`abi.decode` が型制限内で使用され、オーバーフローを防ぐようにします。
 
 ---
 
