@@ -3,7 +3,7 @@
 
 ### **説明**
 
-Denial of Service (DoS) vulnerabilities occur when a smart contract or system is made unavailable to its users by exhausting computational resources or blocking critical operations. This type of vulnerability can result from inefficient function design, excessive gas usage, or unhandled failure conditions. DoS attacks can lead to degraded performance, halted operations, and a poor user experience. To prevent DoS vulnerabilities, developers must carefully design gas-efficient operations, handle errors gracefully, and mitigate the risk of resource exhaustion.
+サービス拒否 (DoS) 脆弱性は、スマートコントラクトまたはシステムが計算リソースを枯渇させたり、重要な操作をブロックすることで、ユーザーが利用できなくなる場合に発生します。この種の脆弱性は、非効率的な関数設計、過剰なガス使用、未処理の障害状態に起因する可能性があります。DoS 攻撃は、パフォーマンスの低下、操作の停止、ユーザーエクスペリエンスの低下につながる可能性があります。DoS 脆弱性を防ぐには、開発者はガス効率の高い操作を慎重に設計し、エラーを適切に処理し、リソース枯渇のリスクを緩和する必要があります。
 
 ### **例: ユーザー入力による無制限ループ**
 
