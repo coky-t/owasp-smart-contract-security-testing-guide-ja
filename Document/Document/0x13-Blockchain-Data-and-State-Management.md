@@ -140,8 +140,8 @@ contract DataStorage {
 
 #### **なぜ脆弱なのか**
 
-- The contract directly updates the state variable `value` without validating or securing the transaction, exposing the contract to potential manipulation.  
-- If `newValue` is provided by an untrusted user, it could lead to data corruption or loss of value.
+- コントラクトはトランザクションの検証や保護なしで状態変数 `value` を直接更新するため、コントラクトが不正操作される可能性があります。
+- 信頼できないユーザーによって `newValue` が提供される場合、データの破損や値の損失につながる可能性があります。
 
 
 
