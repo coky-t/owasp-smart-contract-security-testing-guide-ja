@@ -216,8 +216,8 @@ contract SecureExternalData {
 
 
 #### **チェック方法**
-- **Code Review:** Look for external contract calls and ensure that proper validation mechanisms (e.g., access control and data validation) are in place.
-- **Dynamic Testing:** Attempt to feed invalid or malicious data to the contract and verify that it rejects the input or fails gracefully.
+- **コードレビュー:** 外部コントラクト呼び出しを探し、適切なバリデーションメカニズム (アクセス制御やデータバリデーションなど) が配備されていることを確認します。
+- **動的テスト:** 無効なデータや悪意のあるデータをコントラクトに供給することを試みて、入力を拒否するか、適切に失敗するかを検証します。
 
 ---
 
