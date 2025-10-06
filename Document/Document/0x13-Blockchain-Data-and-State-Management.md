@@ -239,8 +239,8 @@ contract InconsistentState {
 
 #### **なぜ脆弱なのか**
 
-- The contract does not emit events after updating the state, leading to a lack of transparency and difficulty tracking state changes.  
-- The absence of events makes it harder to detect inconsistencies or malicious changes to the data.
+- コントラクトは状態の更新後にイベントを発行しないため、透明性が欠如し、状態変化の追跡が困難になります。
+- イベントが存在しないため、データの不整合や悪意のある変更を検出することが困難になります。
 
 
 #### 修正されたコード:
