@@ -164,8 +164,8 @@ contract SecureDataStorage {
 
 
 #### **チェック方法**
-- **Code Review:** Ensure that state variables are updated only through validated functions, and that access to sensitive operations is restricted through appropriate access controls.
-- **Testing:** Test the contract by submitting values from different sources and verify that the state is only updated when appropriate conditions are met.
+- **コードレビュー:** 状態変数は検証済みの関数を通じてのみ更新され、機密性の高い操作へのアクセスは適切なアクセス制御によって制限されていることを確認します。
+- **テスト:** さまざまなソースから値を送信してコントラクトをテストし、適切な条件が満たされる場合のみ状態が更新されることを検証します。
 
 ---
 
