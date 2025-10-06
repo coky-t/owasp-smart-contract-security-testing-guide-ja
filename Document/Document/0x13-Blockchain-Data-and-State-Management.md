@@ -261,5 +261,5 @@ contract ConsistentState {
 
 
 #### **チェック方法**
-- **Code Review:** Ensure that important state changes and data updates are accompanied by event emissions to track changes and ensure consistency.
-- **Testing:** Monitor the contract’s events and check that critical operations such as state changes are logged correctly.
+- **コードレビュー:** 重要な状態変更やデータ更新にはイベント発行が伴い、変更を追跡して、一貫性を確保することを確認します。
+- **テスト:** コントラクトのイベントを監視し、状態変更などの重要な操作が正しくログ記録されていることをチェックします。
