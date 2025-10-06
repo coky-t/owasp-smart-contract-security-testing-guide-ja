@@ -186,8 +186,8 @@ contract ExternalData {
 #### **なぜ脆弱なのか**
 
 
-- The contract calls external data sources without validating the data properly, allowing attackers to feed false or malicious data.  
-- The `oracle.call()` method exposes the contract to arbitrary external calls, which could result in unintended consequences.
+- コントラクトはデータを適切に検証せずに外部データソースを呼び出すため、攻撃者が虚偽のデータや悪意のあるデータを供給できる可能性があります。
+- `oracle.call()` メソッドはコントラクトを任意の外部呼び出しに公開するため、意図しない結果を生じる可能性があります。
 
 
 #### 修正されたコード:
