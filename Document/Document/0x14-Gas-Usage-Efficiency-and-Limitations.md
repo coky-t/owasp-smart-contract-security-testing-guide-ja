@@ -24,9 +24,9 @@ function transfer(address recipient, uint256 amount) public {
 - **スケーラビリティの制限**: ガスコストが上昇すると、ガス制限に達することなく多数のトランザクションやユーザーを処理するコントラクトの能力に深刻な影響を及ぼします。
 
 ### **対策**
-- **Gas Usage Optimization**: Use efficient algorithms and reduce the number of computations performed on-chain. Avoid unnecessary state changes, and combine multiple operations where possible. Optimize loops, storage reads/writes, and event emissions to reduce costs.
-- **Gas Estimation Tools**: Use tools like eth_gasPrice and gasStation to estimate gas prices and set appropriate gas limits for transactions. Implement gas estimation functions within the contract to predict and optimize gas usage.
-- **Layer 2 Solutions**: Consider integrating Layer 2 scaling solutions such as rollups or state channels to offload computation and reduce gas costs while improving transaction throughput. Validate the security and reliability of the chosen Layer 2 solutions to ensure seamless integration.
+- **ガス使用量の最適化**: 効率的なアルゴリズムを使用し、オンチェーンで実行される計算回数を削減します。不要な状態変更を避け、可能な限り複数の操作を組み合わせます。ループ、ストレージの読み取り/書き込み、イベント発行を最適化してコストを削減します。
+- **ガス推定ツール**: eth_gasPrice や gasStation などのツールを使用してガス価格を推定し、トランザクションに適切なガス制限を設定します。コントラクト内にガス推定機能を実装して、ガス使用量を予測して最適化します。
+- **レイヤ 2 ソリューション**: ロールアップやステートチャネルなどのレイヤ 2 スケーリングソリューションの統合を検討し、計算負荷を軽減してガスコストを削減しながらトランザクションスループットを向上します。選択したレイヤ 2 ソリューションのセキュリティと信頼性を検証し、シームレスな統合を確保します。
 
 ---
 
