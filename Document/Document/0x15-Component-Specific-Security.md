@@ -1,7 +1,7 @@
 # コンポーネント固有のセキュリティのテスト (Testing Component-Specific Security)
 
 ### **説明**
-Component-specific security focuses on the proper implementation and management of individual components in a smart contract ecosystem, such as tokens, NFTs, vaults, staking mechanisms, and liquidity pools. Each component has unique security considerations that must be addressed to prevent vulnerabilities and ensure smooth, secure operations within the broader system. These components often interact with each other, so it's critical to ensure that each is implemented correctly and adheres to established standards to avoid risks such as inconsistent balances, unintended behavior, and attacks.
+コンポーネント固有のセキュリティは、トークン、NFT、Vault、ステーキングメカニズム、流動性プールなど、スマートコントラクトエコシステム内の個々のコンポーネントの適切な実装と管理に重点を置いています。各コンポーネントには、脆弱性を防ぎ、システム全体における円滑で安全な運用を確保するために対処しなければならない、独自のセキュリティ上の考慮事項があります。これらのコンポーネントは相互にやり取りすることが多いため、一貫性のない残高、意図しない動作、攻撃などのリスクを避けるために、それぞれが正しく実装され、確立された標準に準拠していることを確保することが重要です。
 
 ### **例: ERC20 トークンセキュリティ**
 ```solidity
