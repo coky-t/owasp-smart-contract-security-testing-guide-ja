@@ -73,6 +73,6 @@ contract OptimizedGas {
 ```
 
 #### **チェック方法**
-- **Code Review:** Ensure that loops and functions which deal with dynamic data structures are optimized for gas usage. Look for unnecessary state changes or excessive iterations within a single transaction.  
-- **Gas Estimation:** Use tools like eth-gas-reporter or Remix IDE to estimate gas usage before and after optimizations.  
-- **Dynamic Testing:** Test the contract with various input sizes and check that it performs within reasonable gas limits, ensuring it doesn't exceed the block gas limit.
+- **コードレビュー:** 動的なデータ構造を扱うループや関数がガス使用に最適化されていることを確認します。単一トランザクション内の不要な状態変更や過剰な反復処理を探します。
+- **ガス推定:** eth-gas-reporter や Remix IDE などのツールを使用して、最適化前後のガス使用を推定します。
+- **動的テスト:** さまざまな入力サイズでコントラクトをテストし、適切なガス制限内で動作することをチェックして、ブロックガス制限を超えないことを確認します。
