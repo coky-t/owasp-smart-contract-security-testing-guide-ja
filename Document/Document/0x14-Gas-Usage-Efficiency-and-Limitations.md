@@ -18,10 +18,10 @@ function transfer(address recipient, uint256 amount) public {
 ```
 
 ### **影響**
-- **High Gas Costs**: Inefficient smart contracts lead to higher gas costs for users, resulting in increased transaction fees and potentially deterring interaction with the contract.
-- **Transaction Failures**: Exceeding gas limits or inefficient use of gas can cause transactions to fail, resulting in reverted transactions and user dissatisfaction.
-- **Network Congestion**: Unoptimized contracts can cause network congestion, especially during high traffic periods, leading to delays and higher fees.
-- **Scalability Limitations**: As gas costs increase, the ability of the contract to handle a large number of transactions or users without hitting the gas limit is severely impacted.
+- **ガスコストの高騰**: 非効率なスマートコントラクトはユーザーのガスコストを高め、トランザクション手数料の増加につながり、コントラクトの利用を阻害する可能性があります。
+- **トランザクションの失敗**: ガス制限の超過や非効率なガスの使用はトランザクションの失敗につながり、トランザクションのリバートとユーザーの不満につながる可能性があります。
+- **ネットワークの輻輳**: 最適化されていないコントラクトは、特にトラフィックの高い時間帯に、ネットワークの輻輳を引き起こし、遅延や手数料の上昇につながる可能性があります。
+- **スケーラビリティの制限**: ガスコストが上昇すると、ガス制限に達することなく多数のトランザクションやユーザーを処理するコントラクトの能力に深刻な影響を及ぼします。
 
 ### **対策**
 - **Gas Usage Optimization**: Use efficient algorithms and reduce the number of computations performed on-chain. Avoid unnecessary state changes, and combine multiple operations where possible. Optimize loops, storage reads/writes, and event emissions to reduce costs.
