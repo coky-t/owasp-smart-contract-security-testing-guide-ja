@@ -50,9 +50,9 @@ contract GasInefficient {
 ```
 
 #### **なぜ脆弱なのか**
-- This contract uses a loop to iterate over an input array and push data into a dynamic array.  
-- The gas cost increases linearly with the size of the input array. For large datasets, this can lead to excessive gas usage, potentially causing the transaction to exceed the block gas limit.  
-- Smart contracts with inefficient loops that grow dynamically can become unmanageable when interacting with large datasets.
+- このコントラクトはループを使用して入力配列を反復処理し、データを動的配列にプッシュします。
+- ガスコストは入力配列のサイズに比例して増加します。大規模なデータセットでは、過剰なガス使用につながり、トランザクションがブロックガス制限を超えてしまう可能性があります。
+- 非効率なループで動的に増加するスマートコントラクトは、大規模なデータセットとやり取りする際に、管理不能となる可能性があります。
 
 
 #### 修正されたコード:
