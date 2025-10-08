@@ -32,12 +32,12 @@ contract MyToken is ERC20 {
 - **Uniswap V4 フックの脆弱性**: Uniswap の TickMath および FullMath ライブラリの不正確な統合や使用は、オーバーフローやアンダーフローの問題を導き、予期しない動作やコントラクトの失敗につながる可能性があります。
 
 ### **対策**
-- **Token Security**: Ensure compliance with token standards such as ERC20, ERC721, and ERC1155. Properly manage the total supply and token addresses. Avoid zero-amount transfers causing issues and ensure compatibility with other contracts or integrations.
-- **NFT Best Practices**: Implement strong standards for creating, managing, and transferring NFTs. Ensure metadata integrity and safeguard against unauthorized minting and transfers. Secure royalty payments and token burns to prevent exploitative behavior.
-- **Vault Management**: Address potential withdrawal overheads and ensure efficient handling of assets such as stETH and wstETH. Take care when converting between rebasing tokens to avoid discrepancies.
-- **Staking Mechanisms**: Regularly monitor and secure liquid staking mechanisms. Prevent discrepancies in reward transfers and ensure proper communication with users about potential changes, especially in the rate of tokens like sfrxETH.
-- **Liquidity Pool Security**: Secure the logic in automated market makers, especially for managing slippage and ensuring fair fee distributions. Ensure that the AMM is protected against known exploits and attacks.
-- **Uniswap V4 Integration**: Follow best practices for integrating Uniswap's TickMath and FullMath libraries, ensuring safe handling of arithmetic operations and proper validation to prevent overflow or underflow issues.
+- **トークンセキュリティ**: ERC20, ERC721, ERC1155 などのトークン標準への準拠を確保します。総供給量とトークンアドレスを適切に管理します。問題を引き起こすゼロ金額の送金を避け、他のコントラクトや統合との互換性を確保します。
+- **NFT ベストプラクティス**: NFT の作成、管理、転送に関する強力な標準を実装します。メタデータの完全性を確保し、不正な鋳造や転送から守ります。ロイヤリティ支払いとトークンバーンを保護し、搾取行為を防ぎます。
+- **Vault 管理**: 潜在的な引き落としオーバーヘッドに対処し、stETH や wstETH などの資産を効率的に処理するようにします。リベーストークン間の変換は、不一致を避けるために注意を払います。
+- **ステーキングメカニズム**: リキッドステーキングメカニズムを定期的に監視して保護します。報酬の送金における不一致を防ぎ、特に sfrxETH などのトークンのレートにおいて、変更の可能性についてユーザーとの適切なコミュニケーションを確保します。
+- **流動性プールのセキュリティ**: 自動マーケットメーカーのロジック、特にスリッページ管理と公正な手数料分配の確保、を保護します。AMM が既知のエクスプロイトや攻撃から保護されていることを確認します。
+- **Uniswap V4 の統合**: Uniswap の TickMath および FullMath ライブラリを統合するためのベストプラクティスに従い、算術演算の安全な処理と適切なバリデーションを確保して、オーバーフローやアンダーフローの問題を防ぎます。
 
 ### **このカテゴリで発生する可能性のある脆弱性の種類**
 - **Token Minting Inconsistencies**: Incorrect updates to the totalSupply or failure to manage token addresses properly can cause inconsistencies and errors in token transactions.
