@@ -54,7 +54,7 @@ contract MyToken is ERC20 {
 
 
 ### **説明**
-Component-Specific Security focuses on ensuring that each specific component of a decentralized application (dApp) or smart contract ecosystem is securely implemented. This includes a wide range of areas such as token standards (ERC20, ERC721, ERC1155), NFTs, vaults, liquidity pools, and other components. Properly securing these components is essential to avoid vulnerabilities that can lead to funds being stolen, lost, or misused. This test will focus on validating the security considerations for the components listed in the controls, ensuring that each one is implemented securely and with the appropriate mechanisms to protect users and assets.
+コンポーネント固有のセキュリティは、分散型アプリケーション (dApp) やスマートコントラクトエコシステムのそれぞれのコンポーネントが安全に実装されていることを確保することに重点を置いています。これは、トークン標準 (ERC20, ERC721, ERC1155)、NFT、Vault、流動性プール、その他のコンポーネントなどの幅広い領域を含みます。これらのコンポーネントを適切に保護することは、資金の盗難、損失、悪用につながる脆弱性を避けるために不可欠です。このテストは、コントロールにリストされているコンポーネントのセキュリティ上の考慮事項を検証することに重点を置き、それぞれのものが安全に実装され、ユーザーと資産を保護するための適切なメカニズムを備えていることを確認します。
 
 ---
 
