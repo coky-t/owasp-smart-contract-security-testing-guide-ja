@@ -111,6 +111,6 @@ contract SafeERC20 {
 ```
 
 ### **チェック方法**
-- **Code Review:** Look for the `approve` function in token contracts and ensure that it includes the necessary checks to prevent the race condition. The secure approach is to first set the allowance to zero before updating it to a new value, or to require that it is zero if being reset.
-- **Static Analysis:** Use tools such as SolidityScan, MythX or Slither to check for the "approval race condition" and ensure the contract doesn't allow for this vulnerability.
-- **Dynamic Testing:** Test token transfer functionality with edge cases where the allowance is set to non-zero values before calling `approve`. Verify that it works correctly and no unauthorized transfers are possible.
+- **コードレビュー:** トークンコントラクト内の `approve` 関数を探し、競合状態を防ぐために必要なチェックを含むことを確認します。安全なアプローチは、新しい値に更新する前にまず allowance をゼロに設定するか、リセットする場合はゼロであることを必須とすることです。
+- **静的解析:** SolidityScan, MythX, Slither などのツールを使用して「承認競合状態」をチェックし、コントラクトがこの脆弱性を許容していないことを確認します。
+- **動的テスト:** `approve` を呼び出す前に allowance にゼロ以外の値を設定するエッジケースでトークン転送機能をテストします。それが正しく機能し、不正な転送ができないことを検証します。
