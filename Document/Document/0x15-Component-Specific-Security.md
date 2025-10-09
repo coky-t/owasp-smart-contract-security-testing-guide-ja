@@ -83,8 +83,8 @@ contract SimpleERC20 {
 ```
 
 #### **なぜ脆弱なのか**
-- The `approve` function does not include a check for the current allowance before setting a new one, which could allow for the "approval race condition." This can result in a vulnerability where an attacker could bypass the allowance mechanism and transfer more tokens than intended.  
-- This issue is a well-known vulnerability in ERC20 token implementations.
+- `approve` 関数は、新しい allowance を設定する前に現在の allowance に対するチェックを含んでいないため、「承認競合状態」をもたらす可能性があります。これは、攻撃者が allowance メカニズムを回避し、意図したよりも多くのトークンを転送できる脆弱性を生じる可能性があります。
+- この問題は ERC20 トークン実装における既知の脆弱性です。
 
 
 #### 修正されたコード:
