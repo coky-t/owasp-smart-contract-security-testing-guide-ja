@@ -1,4 +1,4 @@
-# アクセス制御と認証のテスト (Testing Access Control and Authentication Vulnerabilties)
+# アクセス制御と認証の脆弱性のテスト (Testing Access Control and Authentication Vulnerabilties)
 
 ### **説明**
 
